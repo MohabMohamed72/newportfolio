@@ -4,7 +4,7 @@
 <template>
     <div class="navbar-container">
         <div class="navbar-logo">
-            <p>Mo</p>
+            <NuxtImg src="/images/MyLogo.png" />
         </div>
 
         <div class="navbar-links">

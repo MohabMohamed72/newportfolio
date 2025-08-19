@@ -3,7 +3,7 @@
 <template>
     <div class="home-header">
         <div class="image-container">
-            
+            <NuxtImg src="/images/MyLogo.png" />
         </div>
         <div class="text-container">
 
