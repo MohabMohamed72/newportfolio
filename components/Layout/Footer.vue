@@ -2,7 +2,8 @@
 
 </script>
 <template>
-bbbbbbbbb
+<p>aaaaaaaaaa</p>
+
 </template>
 
 <style scoped lang="scss"></style>
