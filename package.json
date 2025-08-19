@@ -15,6 +15,7 @@
     "vue-router": "^4.5.1"
   },
   "devDependencies": {
-    "nuxt-vite": "^0.3.5"
+    "nuxt-vite": "^0.3.5",
+    "sass-embedded": "^1.90.0"
   }
 }
