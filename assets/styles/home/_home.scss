@@ -4,4 +4,30 @@
     height: 100vh;
     background-color: $primary-color;
     @include flex-row(nowrap, center, center);
+
+    .image-container{
+        width: 50%;
+    }
+    
+    .text-container{
+        color: $white-color;
+        width: 50%;
+        font-family: "regular";
+
+        .text{
+            font-size: $XlSize4;
+            line-height: 1.5;
+            margin-bottom: $XsSize2;
+
+            .name{
+                color: $white-color;
+                font-weight: $BaseFontWeightBold;
+            }
+
+            .role{
+                color: $white-color;
+                font-weight: $BaseFontWeightBold;
+            }
+        }
+    }
 }

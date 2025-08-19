@@ -4,7 +4,7 @@
 <template>
     <div class="navbar-container">
         <div class="navbar-logo">
-            <NuxtImg src="/images/MyLogo.png" />
+            <NuxtImg src="/images/logo3.png" />
         </div>
 
         <div class="navbar-links">
@@ -26,4 +26,6 @@
     </div>
 </template>
 
-<style scoped lang="scss"></style>
+<style scoped lang="scss">
+
+</style>
