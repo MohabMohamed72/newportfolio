@@ -1,3 +1,7 @@
-.home-page{
-    
+@import "../variables";
+@import "../mixins/flex";
+.home-header{
+    height: 100vh;
+    background-color: $primary-color;
+    @include flex-row(nowrap, center, center);
 }

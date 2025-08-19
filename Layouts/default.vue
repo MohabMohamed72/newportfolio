@@ -4,7 +4,7 @@
     <div class="page-layout">
         <LayoutNavbar />
         <slot />
-        <LayoutFooter />
+        <!-- <LayoutFooter /> -->
     </div>
 </template>
 
