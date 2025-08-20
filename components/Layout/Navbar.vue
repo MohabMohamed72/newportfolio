@@ -1,5 +1,13 @@
 <script setup lang="ts">
 
+
+const position = ref('center');
+const visible = ref(false);
+
+const openPosition = (pos) => {
+    position.value = pos;
+    visible.value = true;
+}
 </script>
 <template>
     <div class="navbar-container">
@@ -22,6 +30,10 @@
                     <li class="link">Experience</li>
                 </NuxtLink>
             </ul>
+        </div>
+
+        <div class="sidebar">
+            <LayoutSidebarDialog />
         </div>
     </div>
 </template>
