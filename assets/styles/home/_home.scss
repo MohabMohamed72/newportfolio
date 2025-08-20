@@ -1,33 +1,65 @@
 @import "../variables";
 @import "../mixins/flex";
-.home-header{
-    height: 100vh;
-    background-color: $primary-color;
-    @include flex-row(nowrap, center, center);
+.home-header {
+  height: 100vh;
+  background-color: $primary-color;
+  @include flex-row(nowrap, center, center);
+  @media (max-width: 768px) {
+    @include flex-column(nowrap, center, center);
+  }
 
-    .image-container{
-        width: 50%;
+  .image-container {
+    width: 50%;
+    position: relative;
+    @media (max-width: 768px) {
+      width: 90%;
     }
-    
-    .text-container{
+    .logo {
+      width: 80%;
+      @media (max-width: 768px) {
+        width: 100%;
+      }
+    }
+  }
+
+  .text-container {
+    color: $white-color;
+    width: 50%;
+    font-family: "regular";
+    @media (max-width: 768px) {
+    width: 90%;
+    text-align: center;
+
+}
+
+    .text {
+      font-size: $XlSize4;
+      line-height: 1.5;
+      margin-bottom: $XsSize2;
+
+      .name {
         color: $white-color;
-        width: 50%;
-        font-family: "regular";
+        font-weight: $BaseFontWeightBold;
+        background-image: linear-gradient(
+          to right,
+          rgb(34, 52, 131),
+          rgb(87, 87, 216)
+        );
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+      }
 
-        .text{
-            font-size: $XlSize4;
-            line-height: 1.5;
-            margin-bottom: $XsSize2;
-
-            .name{
-                color: $white-color;
-                font-weight: $BaseFontWeightBold;
-            }
-
-            .role{
-                color: $white-color;
-                font-weight: $BaseFontWeightBold;
-            }
-        }
+      .role {
+        color: $white-color;
+        font-weight: $BaseFontWeightBold;
+        background-image: linear-gradient(
+          to right,
+          rgb(34, 52, 131),
+          rgb(87, 87, 216)
+        );
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+      }
     }
+  }
 }

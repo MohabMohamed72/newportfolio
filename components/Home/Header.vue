@@ -3,14 +3,13 @@
 <template>
     <div class="home-header">
         <div class="image-container">
-            <!-- <NuxtImg src="/images/Me.jpg" /> -->
-            <NuxtImg src="/images/logo3.png" />
+            <NuxtImg src="/images/logo3.png" class="logo" />
 
         </div>
         <div class="text-container">
             <p class="text">
                 Hello, I'm <span class="name">Mohab</span>
-                Iam a <span class="role">Full Stack Developer</span>
+                Iam a <span class="role">Frontend Developer</span>
             </p>
         </div>
     </div>

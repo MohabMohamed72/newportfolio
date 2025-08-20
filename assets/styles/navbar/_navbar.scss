@@ -21,6 +21,9 @@
   }
 
   .navbar-links {
+    @media(max-width:768px){
+      display: none;
+    }
     .links-list {
       @include flex-row(nowrap, center, center);
       gap: $XsSize2;
@@ -38,6 +41,15 @@
           cursor: pointer;
         }
       }
+    }
+  }
+
+  .sidebar{
+    display: none;
+    @media(max-width:768px){
+      height: 100%;
+      top: 0;
+      display: block;
     }
   }
 }
