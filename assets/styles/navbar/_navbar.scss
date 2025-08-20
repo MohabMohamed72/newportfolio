@@ -12,9 +12,9 @@
     @include flex-row(nowrap, center, center);
     gap: $XsSize2;
     width: 100px;
-    border-radius: 15px
+    border-radius: 15px;
     img{
-      width: 100%;
+      width: 95%;
       height: 100%;
       border-radius: 15px;
     }
