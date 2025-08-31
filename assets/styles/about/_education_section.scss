@@ -1,0 +1,32 @@
+@import "../variables";
+@import "../mixins/flex";
+@import "../mixins/grid";
+
+.education-section {
+    background-color: $primary-color;
+    color: white;
+    padding-block: $XlSize;
+
+    @media (min-width: 768px) {
+        height: calc(100vh - 80px);
+    }
+
+    .title {
+        text-align: center;
+        font-size: $XlSize4;
+
+        color: $white-color;
+        font-weight: $BaseFontWeightBold;
+        background-image: linear-gradient(to right,
+                rgb(29, 43, 103),
+                rgb(143, 70, 172));
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+    }
+
+    .description{
+        text-align: center;
+        font-size: $XlSize3;
+        margin-top: $XsSize2;
+    }
+}

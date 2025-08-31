@@ -1,21 +1,32 @@
 @import "../variables";
 @import "../mixins/flex";
+
 .home-header {
-  height: 100vh;
+  // height: 100vh;
+  @media (min-width: 768px) {
+    height: calc(100vh - 80px);
+  }
   background-color: $primary-color;
   @include flex-row(nowrap, center, center);
+
   @media (max-width: 768px) {
     @include flex-column(nowrap, center, center);
+    padding-bottom: 25px;
   }
+
+  position: relative;
 
   .image-container {
     width: 50%;
     position: relative;
+
     @media (max-width: 768px) {
       width: 90%;
     }
+
     .logo {
       width: 80%;
+
       @media (max-width: 768px) {
         width: 100%;
       }
@@ -26,11 +37,11 @@
     color: $white-color;
     width: 50%;
     font-family: "regular";
-    @media (max-width: 768px) {
-    width: 90%;
-    text-align: center;
 
-}
+    @media (max-width: 768px) {
+      width: 90%;
+      text-align: center;
+    }
 
     .text {
       font-size: $XlSize4;
@@ -40,11 +51,9 @@
       .name {
         color: $white-color;
         font-weight: $BaseFontWeightBold;
-        background-image: linear-gradient(
-          to right,
-          rgb(34, 52, 131),
-          rgb(87, 87, 216)
-        );
+        background-image: linear-gradient(to right,
+            rgb(34, 52, 131),
+            rgb(87, 87, 216));
         -webkit-background-clip: text;
         -webkit-text-fill-color: transparent;
       }
@@ -52,14 +61,72 @@
       .role {
         color: $white-color;
         font-weight: $BaseFontWeightBold;
-        background-image: linear-gradient(
-          to right,
-          rgb(34, 52, 131),
-          rgb(87, 87, 216)
-        );
+        background-image: linear-gradient(to right,
+            rgb(34, 52, 131),
+            rgb(87, 87, 216));
         -webkit-background-clip: text;
         -webkit-text-fill-color: transparent;
       }
     }
+
+    .description {
+      font-size: $XlSize2;
+      line-height: 1.5;
+      text-align: start;
+      max-width: 450px;
+      @media (max-width: 768px) {
+        text-align: center;
+        margin-left: auto;
+        margin-right: auto;
+        
+      }
+    }
+
+    button{
+      width: 50%;
+      @media (max-width: 768px) {
+        width: 60%;
+        margin-left: auto;
+        margin-right: auto;
+        margin-top: $XsSize3;
+        
+      }
+      background-color: $secondary-color;
+      border: none;
+      border-radius: $XsSize;
+      color: white;
+      padding: $XsSize2;
+      cursor: pointer;
+      transition: all 0.3s linear;
+      &:hover{
+        background-color: darken($secondary-color, 10%);  
+      }
+      .downlaod-cv{
+        width: 100%;
+        @include flex-row(center, space-between, center);
+        padding-inline: $XsSize;
+
+
+        .download-icon{
+          width: 20px;
+          height: 20px;
+          animation: movement 1s infinite linear;
+          @keyframes movement {
+            0% {
+              transform: translateY(0);
+            }
+            50% {
+              transform: translateY(3px);
+            }
+            100% {
+              transform: translateY(0);
+            }
+          }
+        }
+     
+      }
+    }
   }
+
+
 }
