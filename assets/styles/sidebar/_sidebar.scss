@@ -1,12 +1,16 @@
-.sidebar{
+.sidebar {
     height: 100vh;
-    .sidebar-btn{
+    font-family: "regular";
+
+    .sidebar-btn {
         width: 30px;
         cursor: pointer;
     }
 
-    .p-drawer{
-        background:none ;
+    .p-drawer {
+        background: none;
+
+
     }
-   
+
 }

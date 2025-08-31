@@ -8,12 +8,13 @@
   color: $white-color;
   font-family: "regular";
 
-  .navbar-logo{
+  .navbar-logo {
     @include flex-row(nowrap, center, center);
     gap: $XsSize2;
     width: 100px;
     border-radius: 15px;
-    img{
+
+    img {
       width: 95%;
       height: 100%;
       border-radius: 15px;
@@ -21,9 +22,10 @@
   }
 
   .navbar-links {
-    @media(max-width:768px){
+    @media(max-width:768px) {
       display: none;
     }
+
     .links-list {
       @include flex-row(nowrap, center, center);
       gap: $XsSize2;
@@ -44,12 +46,42 @@
     }
   }
 
-  .sidebar{
+  .sidebar {
     display: none;
-    @media(max-width:768px){
+
+    @media(max-width:768px) {
       height: 100%;
       top: 0;
       display: block;
     }
+
+
+
+
+  }
+}
+
+.sidebar-links-list{
+  @include flex-column(nowrap ,flex-start ,flex-start);
+  gap: $XsSize2;
+  width: 100%;
+  
+  a{
+    width: 100%;
+
+  }
+}
+
+.sidebar-link{
+  width: 100%;
+  color: white;
+  font-family: "regular";
+  font-size: $XlSize;
+  padding: $SmSize;
+  transition: all 0.3s linear;
+  border-radius: $SmSize;
+  &:hover{
+    background-color: white;
+    color: black;
   }
 }

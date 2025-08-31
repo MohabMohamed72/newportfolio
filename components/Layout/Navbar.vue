@@ -20,7 +20,7 @@ const openPosition = (pos) => {
                 <NuxtLink to="/">
                     <li class="link">Home</li>
                 </NuxtLink>
-                <NuxtLink to="/">
+                <NuxtLink to="/about">
                     <li class="link">About</li>
                 </NuxtLink>
                 <NuxtLink to="/">
