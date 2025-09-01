@@ -1,5 +1,6 @@
 <script setup lang="ts">
 
+import { ref } from 'vue';
 
 const position = ref('center');
 const visible = ref(false);
